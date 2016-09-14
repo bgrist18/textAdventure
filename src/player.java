@@ -14,7 +14,7 @@ public class player {
         System.out.println("Welcome, " + name);
     }
     
-        chooseWeapon() throws Exception {
+        void chooseWeapon() throws Exception {
         System.out.println("Do you want a sword or mace?");
         weapon = game.scanner.nextLine();
 
