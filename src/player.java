@@ -28,9 +28,9 @@ public class player {
             System.out.println("weapon not recognized");
             chooseWeapon();
         }
-
-        System.out.println("Would you like to go to the tunnel or forest");
-            location = location.scanner.nextLine();
+        void ("chooseLocation") {
+                System.out.println("Would you like to go to the tunnel or forest");
+                location = location.scanner.nextLine();
 
         if (location.equalsIgnoreCase("tunnel")){
             System.out.println("entering tunnel");
@@ -44,4 +44,5 @@ public class player {
 
     }
 
+    
 }
