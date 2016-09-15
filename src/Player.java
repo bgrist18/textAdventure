@@ -7,18 +7,18 @@ public class Player {
     String name;
     String weapon;
     String location;
-    ArrayList<String> items = new ArrayList<>():
+    ArrayList<String> items = new ArrayList<>();
 
 
     void chooseName(){
         System.out.println("What is your name?");
-        name = Game.scanner.nextLine();
+        name = Game.customLine();
         System.out.println("Welcome, " + name);
     }
     
     void chooseWeapon() throws Exception {
         System.out.println("Do you want a sword or mace?");
-        weapon = Game.scanner.nextLine();
+        weapon = Game.customLine();
 
         if (weapon.equalsIgnoreCase("SWORD")) {
             System.out.println("Here's your sword!");
@@ -32,7 +32,7 @@ public class Player {
 
     void chooseLocation() throws Exception {
         System.out.println("Would you like to go to the tunnel or forest");
-        location = Game.scanner.nextLine();
+        location = Game.customLine();
 
         if (location.equalsIgnoreCase("tunnel")){
             System.out.println("entering tunnel");
@@ -47,7 +47,7 @@ public class Player {
 
     void findItem(String item) {
         System.out.println("You found a " + item + "! Press y to pick up.");
-        String answer = Game.scanner.nextLine():
+        String answer = Game.customLine();
         if (answer.equalsIgnoreCase("y")) {
             items.add(item:)
             System.out.println("You picked" + item + "up");
