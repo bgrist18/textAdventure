@@ -19,7 +19,9 @@ public class Game {
             player.findItem("shield");
             player.findItem("potion");
 
-            System.out.println("You win!");
+            Enemy ogre = new Enemy("Ogre", 10, 10);
+            player.battle(ogre);
+
             System.out.println("Would you like to play again? Type y or n");
 
             String answer = customLine();
